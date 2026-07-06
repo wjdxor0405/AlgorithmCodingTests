@@ -21,8 +21,6 @@ def solution(N, stages):
         result[i-1] = [i, Frac(s[i], d)]
 
     result.sort(key=lambda x: (x[1], -x[0]))
-    # print(s)
-    # print(result)
     for i in range(N):
         answer[i] = result[i][0]
     
